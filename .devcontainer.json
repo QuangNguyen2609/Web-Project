@@ -35,12 +35,6 @@
 
 	// Default settings
 	"settings": {
-		"extension-uninstaller.uninstall": [
-		  "github.copilot",
-		  "github.copilot-nightly",
-		  "tabnine.tabnine-vscode",
-		  "timkmecl.chatgpt"
-		],
 		"extensions.ignoreRecommendations": true,
 		"files.autoSave": "afterDelay",
 		"files.exclude": {
