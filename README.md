@@ -1,6 +1,6 @@
 ## Web Project CS2207 ##
 
-### Dat: Event websit ###
+### Dat: Event website ###
 ### Minh: Group website ###
 ### Quang: Login pop-up ###
 ### Quan: Add Event and Group preview in index.html
