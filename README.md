@@ -1,2 +1,5 @@
 ## Web Project CS2207 ##
-t la D1ablo
+
+Dat: Event website
+Minh: Group website
+Quang: Login pop-up
