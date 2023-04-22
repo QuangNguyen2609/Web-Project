@@ -12,19 +12,19 @@
 
 <div id="login-form-wrap">
   <h2 id="h2_login">Login</h2>
-  <form id="login-form">
+  <form id="login-form" action="/login" method="POST">
     <p class="p_login">
-    <input class="input_text" type="text" id="username" name="username" placeholder="Username" required><i><span></span><span></span></i>
+    <input class="input_text" type="email" id="email" name="email" placeholder="Email" required><i><span></span><span></span></i>
     </p>
     <p class="p_login">
-    <input class="input_email" type="email" id="email" name="email" placeholder="Password" required><i><span></span><span></span></i>
+    <input class="input_email" type="text" id="password" name="password" placeholder="Password" required><i><span></span><span></span></i>
     </p>
     <p class="p_login">
     <input class="input_login" type="submit" id="login" value="Login">
     </p>
   </form>
   <div id="create-account-wrap">
-    <p class="p_login">Not a member? <a href="signup.html">Create Account</a></p>
+    <p class="p_login">Not a member? <a href="/signup">Create Account</a></p>
   </div>
 </div>
 

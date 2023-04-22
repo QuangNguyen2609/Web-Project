@@ -24,9 +24,25 @@
               </div>
               <div class="navbar-buttons">
                 <button type="button" class="navbar-button">Create new group</button>
-                <a href="/login" id="login-btn" class="navbar-button navbar-button-in">Log in</a>
-                <a href="/signup" id="signup-btn" class="navbar-button navbar-button-primary">Sign up</a>
+                <!-- <a href="/login" id="login-btn" class="navbar-button">Log in</a> -->
+                <!-- <a href="/signup" id="signup-btn" class="navbar-button navbar-button-primary">Sign up</a> -->
               </div>
+              <div class="dropdown">
+                    <div class="avatar">
+                    <img src="https://t4.ftcdn.net/jpg/03/49/49/79/360_F_349497933_Ly4im8BDmHLaLzgyKg2f2yZOvJjBtlw5.jpg" alt="Avatar">
+                    </div>
+                    <div class="dropdown-content">
+                    <a href="#"> Events</a>
+                    <a href="#">Profile</a>
+                    <a href="#" onclick=logout()>Log out </a>
+                    </div>
+              </div>
+              <script>
+                function logout() {
+                  // your logout code goes here
+                  window.location.replace("/login");
+                }
+              </script>
             </div>
             <hr>
           </nav>
@@ -56,11 +72,10 @@
       </table>
       <!-- Container demo -->
 
-
     </main>
 
-
-    <footer id="main-footer">
+  <!--
+    <footer>
       <div class="row primary">
 
         <div class="column links">
@@ -114,8 +129,7 @@
       </div>
 
     </footer>
-
+  -->
 <script src="/routes/index.js"></script>
-
 </body>
 </html>
