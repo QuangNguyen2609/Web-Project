@@ -81,6 +81,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+  text-decoration:none
 }
 
 .navbar-button-in {
@@ -88,10 +89,6 @@ body {
   color: #ffffff;
 }
 
-.navbar-button-out {
-  background-color: lightblue;
-  color: #ffffff;
-}
 
 .navbar-button-primary {
   background-color: #ff4b4b;
@@ -100,6 +97,43 @@ body {
 
 .navbar-button:hover {
   opacity: 0.8;
+}
+
+/* profile drop-down */
+.avatar {
+  margin-right: 10px;
+}
+
+.avatar img {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
 }
 
 /* Main */

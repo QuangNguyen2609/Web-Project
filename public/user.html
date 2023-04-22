@@ -10,7 +10,7 @@
     <header>
           <nav class="navbar">
             <div class="navbar-container">
-              <a href="index.html" class="navbar-logo"><img src="https://static.vecteezy.com/system/resources/thumbnails/002/371/177/small/group-of-ten-people-logo-in-a-circle-persons-teamwork-holding-free-vector.jpg" alt= "Logo"></a>
+              <a href="index.html" class="navbar-logo"><img src="https://cdn1.iconfinder.com/data/icons/space-travel-flat/340/space_astronomy_system_planet_universe_galaxy_star_uranus-256.png" alt= "Logo"></a>
               <div class="navbar-links">
                 <div class="navbar-search">
                     <form action="#" method="get">
@@ -24,9 +24,18 @@
               </div>
               <div class="navbar-buttons">
                 <button type="button" class="navbar-button">Create new group</button>
-                <button type="button" class="navbar-button navbar-button-out" onclick="logout()"> Log out</button>
-                <a href="/login" id="login-btn" class="navbar-button navbar-button-in"> Log in</a>
-                <a href="/signup" id="signup-btn" class="navbar-button navbar-button-primary">Sign up</a>
+                <!-- <a href="/login" id="login-btn" class="navbar-button">Log in</a> -->
+                <!-- <a href="/signup" id="signup-btn" class="navbar-button navbar-button-primary">Sign up</a> -->
+              </div>
+              <div class="dropdown">
+                    <div class="avatar">
+                    <img src="https://t4.ftcdn.net/jpg/03/49/49/79/360_F_349497933_Ly4im8BDmHLaLzgyKg2f2yZOvJjBtlw5.jpg" alt="Avatar">
+                    </div>
+                    <div class="dropdown-content">
+                    <a href="#"> Events</a>
+                    <a href="#">Profile</a>
+                    <a href="#" onclick=logout()>Log out </a>
+                    </div>
               </div>
               <script>
                 function logout() {
