@@ -24,9 +24,16 @@
               </div>
               <div class="navbar-buttons">
                 <button type="button" class="navbar-button">Create new group</button>
-                <a href="/login" id="login-btn" class="navbar-button">Log in</a>
+                <button type="button" class="navbar-button navbar-button-out" onclick="logout()"> Log out</button>
+                <a href="/login" id="login-btn" class="navbar-button navbar-button-in"> Log in</a>
                 <a href="/signup" id="signup-btn" class="navbar-button navbar-button-primary">Sign up</a>
               </div>
+              <script>
+                function logout() {
+                  // your logout code goes here
+                  window.location.replace("/login");
+                }
+              </script>
             </div>
             <hr>
           </nav>
@@ -55,7 +62,6 @@
         </tr>
       </table>
       <!-- Container demo -->
-
 
     </main>
 
@@ -115,6 +121,6 @@
 
     </footer>
   -->
-<!-- <script src="/routes/index.js"></script> -->
+<script src="/routes/index.js"></script>
 </body>
 </html>
