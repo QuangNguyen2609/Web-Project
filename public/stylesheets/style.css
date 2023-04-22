@@ -505,12 +505,25 @@ img {
 
 /*********************** FOOTER *************************/
 
+/***********************MAIN FOOTER *************************/
+#main-footer{
+  background-color: #222;
+  color: #a7a7a7;
+  font-size: 16px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+/***********************GROUPS FOOTER *************************/
 footer {
   background-color: #222;
   color: #a7a7a7;
   font-size: 16px;
   width: 100%;
-  position: relative;
+  /* position: relative; */
   bottom: 0;
   left: 0;
   }
