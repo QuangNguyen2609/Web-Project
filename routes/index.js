@@ -34,6 +34,10 @@ app.get('/group', function(req, res) {
   res.sendFile('/workspaces/Web-Project/public/group.html');
 });
 
+app.get('/group_user', function(req, res) {
+  res.sendFile('/workspaces/Web-Project/public/group_user.html');
+});
+
 app.post('/login', function(req, res){
   var email = req.body.email;
   var password = req.body.password;
@@ -47,6 +51,7 @@ app.post('/login', function(req, res){
 app.post('/signup', function(req, res){
   users_email.push(req.body.email);
   users_password.push(req.body.password);
+  // req.body['user-type'] user or manager
   res.redirect('/login');
 });
 
