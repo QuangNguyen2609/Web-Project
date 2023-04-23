@@ -1,5 +1,22 @@
 var express = require('express');
+const mysql = require('mysql2');
 var app = express();
+
+// database connection example
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'quang',
+  password: 'quang2003',
+  database: 'wdc'
+});
+
+connection.connect();
+
+connection.query('SELECT * FROM users', (error, results, fields) => {
+  if (error)
+    throw error;
+  console.log(results);
+});
 
 
 const users_email = [];
