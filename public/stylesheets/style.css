@@ -3,7 +3,16 @@ html {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
 
+.a-text {
+  color: #cfd2d6;
+}
+.a-text:hover{
+  color: #27bcda;
+}
 
 
 body {
