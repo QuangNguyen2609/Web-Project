@@ -1,5 +1,22 @@
 var express = require('express');
+const mysql = require('mysql2');
 var app = express();
+
+// database connection example
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'quang',
+  password: 'quang2003',
+  database: 'wdc'
+});
+
+connection.connect();
+
+connection.query('SELECT * FROM users', (error, results, fields) => {
+  if (error)
+    throw error;
+  console.log(results);
+});
 
 
 const users_email = [];
@@ -34,6 +51,10 @@ app.get('/group', function(req, res) {
   res.sendFile('/workspaces/Web-Project/public/group.html');
 });
 
+app.get('/group_user', function(req, res) {
+  res.sendFile('/workspaces/Web-Project/public/group_user.html');
+});
+
 app.post('/login', function(req, res){
   var email = req.body.email;
   var password = req.body.password;
@@ -47,9 +68,11 @@ app.post('/login', function(req, res){
 app.post('/signup', function(req, res){
   users_email.push(req.body.email);
   users_password.push(req.body.password);
+  // req.body['user-type'] user or manager
   res.redirect('/login');
 });
 
 
 
 module.exports = app;
+
