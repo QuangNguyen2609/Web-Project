@@ -1,13 +1,16 @@
-## Web Project CS2207 ##
+  ## TASKS ##
+### Dat
+  * Database Schema Design 
+### Minh: 
+  * Group website (DONE)
+  * Event website 
+### Quang: 
+  * Login/out procedure (DONE)
+  * Implement database connection and guideline (DONE)
+  * Using database to populate profile page 
+### Quan: 
+  * Add Event and Group preview in index.html (In progress)
 
-<hr>
-
-### Dat: Event website (Minh)
-### Minh: Group website (DONE)
-### Quang: Login pop-up (DONE)
-### Quan: Add Event and Group preview in index.html (In progress)
-
-<hr>
 
 ## Database Connection ##
 
