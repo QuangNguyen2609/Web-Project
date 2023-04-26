@@ -586,6 +586,17 @@ img {
 /******************TRENDING CATEGORY**************************/
 
 /*********************** LOGIN **********************/
+.data{
+  display:none;
+}
+.g-signin2{
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top:-30px;
+  margin-left:-50px;
+  text-align:center
+}
 #body_login {
   background: #fff;
   font-family: sans-serif;
