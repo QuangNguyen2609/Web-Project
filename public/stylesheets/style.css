@@ -170,6 +170,14 @@ margin-top: 100px;
   text-align: center;
 }
 
+#tr2 {
+  text-align: left;
+}
+
+#tr3 {
+  text-align: left;
+}
+
 #h1_welcome {
   text-align: center;
 }
@@ -185,9 +193,33 @@ margin-top: 100px;
   table-layout: fixed;
 }
 
+.t2 {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.t3 {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
 .td1 {
   padding: 20px;
   text-align: center;
+  vertical-align: top;
+}
+
+.td2 {
+  padding: 20px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.td3 {
+  padding: 20px;
+  text-align: left;
   vertical-align: top;
 }
 
@@ -196,13 +228,47 @@ img {
   margin: 0 auto;
 }
 
+.h2 {
+  color: black;
+}
+
 .h3 {
  color: cornflowerblue;
  margin-top: 20px;
 }
 
+.h4 {
+  color: grey;
+}
+
 #main1 {
   margin-top: 100px;
+}
+
+
+.events-groups {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.info-bar
+{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.explore
+{
+  display: block;
+  position: absolute;
+  float: right;
+}
+
+.club-logo {
+  width: 100px;
+  height: 100px;
 }
 
 /***************CONTAINER ************ */
