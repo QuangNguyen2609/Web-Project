@@ -6,31 +6,47 @@
 </head>
   <body>
     <header>
-        <nav class="navbar">
-          <div class="navbar-container">
-            <a href="/" class="navbar-logo"><img src="https://cdn0.iconfinder.com/data/icons/find-a-job-and-interview-flat/512/conversation_communication_bubble_speech_chat_message_speak_talk_ask_answer-256.png" alt= "Logo"></a>
-            <div class="navbar-links">
-              <div class="navbar-search">
-                  <form action="#" method="get">
-                    <input type="text" name="search" placeholder="Search">
-                    <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
-                  </form>
-                </div>
-              <a href="#">Groups</a>
-              <a href="/event">Events</a>
-              <a href="#">Notifications</a>
-            </div>
-            <div class="navbar-buttons">
-              <button type="button"  class="navbar-button">Create new group</button>
-              <a href="/login" id="login-btn" class="navbar-button navbar-button-in">Log in</a>
-              <a href="/signup" class="navbar-button navbar-button-primary">Sign up</a>
-            </div>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="/user" class="navbar-logo"><img src="https://cdn0.iconfinder.com/data/icons/find-a-job-and-interview-flat/512/conversation_communication_bubble_speech_chat_message_speak_talk_ask_answer-256.png" alt= "Logo"></a>
+          <div class="navbar-links">
+            <div class="navbar-search">
+                <form action="#" method="get">
+                  <input type="text" name="search" placeholder="Search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+            <a href="#">Groups</a>
+            <a href="/event_user">Events</a>
+            <a href="#">Notifications</a>
           </div>
-          <hr>
-        </nav>
-  </header>
+          <div class="navbar-buttons">
+            <button type="button" class="navbar-button">Create new group</button>
+            <!-- <a href="/login" id="login-btn" class="navbar-button">Log in</a> -->
+            <!-- <a href="/signup" id="signup-btn" class="navbar-button navbar-button-primary">Sign up</a> -->
+          </div>
+          <div class="dropdown">
+                <div class="avatar">
+                <img src="https://t4.ftcdn.net/jpg/03/49/49/79/360_F_349497933_Ly4im8BDmHLaLzgyKg2f2yZOvJjBtlw5.jpg" alt="Avatar">
+                </div>
+                <div class="dropdown-content">
+                <a href="#"> Events</a>
+                <a href="#">Profile</a>
+                <a href="#" onclick=logout()>Log out </a>
+                </div>
+          </div>
+          <script>
+            function logout() {
+              // your logout code goes here
+              window.location.replace("/login");
+            }
+          </script>
+        </div>
+        <hr>
+      </nav>
+    </header>
     <main id = "groups">
-      <section class="group-introduction">
+      <section class="introduction">
           <h1>
             <strong> Welcome to Universe Clubs</strong>
            </h1>
@@ -45,7 +61,7 @@
       </section>
       <section class="section" id="group">
         <h2 class="h2-group" >Our Clubs</h2>
-        <div class="group-card">
+        <div class="card">
             <div class="card-content">
               <div class="group-image">
                 <img src="https://csclub.org.au/images/logo.png" alt="Group Image">
@@ -59,7 +75,7 @@
               </div>
             </div>
           </div>
-          <div class="group-card">
+          <div class="card">
             <div class="card-content">
               <div class="group-image">
                 <img src="https://youx.org.au/asset/Organisation/6792/3491325_2_cpc%20png.png?thumbnail_width=375&thumbnail_height=375&resize_type=CropToFit" alt="Group Image">
@@ -73,7 +89,7 @@
               </div>
             </div>
           </div>
-          <div class="group-card">
+          <div class="card">
             <div class="card-content">
               <div class="group-image">
                 <img src="https://cdn.revolutionise.com.au/logos/emp41tiozsitswtz.png" alt="Group Image">
