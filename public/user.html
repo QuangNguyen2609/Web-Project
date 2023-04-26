@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>UniVerse</title>
+    <title>Express</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -18,15 +18,31 @@
                       <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                   </div>
-                <a href="/group">Groups</a>
-                <a href="/event">Events</a>
+                <a href="/group_user">Groups</a>
+                <a href="/event_user">Events</a>
                 <a href="#">Notifications</a>
               </div>
               <div class="navbar-buttons">
                 <button type="button" class="navbar-button">Create new group</button>
-                <a href="/login" id="login-btn" class="navbar-button navbar-button-in">Log in</a>
-                <a href="/signup" id="signup-btn" class="navbar-button navbar-button-primary">Sign up</a>
+                <!-- <a href="/login" id="login-btn" class="navbar-button">Log in</a> -->
+                <!-- <a href="/signup" id="signup-btn" class="navbar-button navbar-button-primary">Sign up</a> -->
               </div>
+              <div class="dropdown">
+                    <div class="avatar">
+                    <img src="https://t4.ftcdn.net/jpg/03/49/49/79/360_F_349497933_Ly4im8BDmHLaLzgyKg2f2yZOvJjBtlw5.jpg" alt="Avatar">
+                    </div>
+                    <div class="dropdown-content">
+                    <a href="#"> Events</a>
+                    <a href="#">Profile</a>
+                    <a href="#" onclick=logout()>Log out </a>
+                    </div>
+              </div>
+              <script>
+                function logout() {
+                  // your logout code goes here
+                  window.location.replace("/login");
+                }
+              </script>
             </div>
             <hr>
           </nav>
@@ -54,63 +70,7 @@
 
         </tr>
       </table>
-      <div class = "events-groups">
-        <div class = "info-bar">
-          <h2 class = "h2">Upcoming events</h2>
-        </div>
-        <div>
-          <table id = "t2">
-            <tr id = "tr2">
-              <td class = "td2">
-                <h4 class = "h4">Mon, Apr 24 - 05:00 PM</h4>
-                <h2 class = "h2">Meet and Greet</h2>
-                <h3 class = "h3">Computer Science Club</h3>
-              </td>
-              <td class = "td2">
-                <h4 class = "h4">Mon, Apr 24 - 06:00 PM</h4>
-                <h2 class = "h2">Industry Night</h2>
-                <h3 class = "h3">Adelaide University Engineering Society</h3>
-              </td>
-              <td class = "td2">
-                <h4 class = "h4">Wed, Apr 26 - 07:00 PM</h4>
-                <h2 class = "h2">Trivia Night</h2>
-                <h3 class = "h3">GAMES Club</h3>
-              </td>
-              <td class = "td2">
-                <h4 class = "h4">Thu, Apr 27 - 05:00 PM</h4>
-                <h2 class = "h2">Meet and Greet</h2>
-                <h3 class = "h3">Competitive Programming Club</h3>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div class = "events-groups">
-          <div class = "info-bar">
-            <h2 class = "h2">Popular clubs</h2>
-          </div>
-          <div>
-            <table id = "t3">
-              <tr id = "tr3">
-                <td class = "td3">
-                  <img src="https://csclub.org.au/images/logo.png" class = "club-logo" alt = "CS Club">
-                  <h3 class = "h3">Computer Science Club</h3>
-                </td>
-                <td class = "td3">
-                  <h3 class = "h3">Adelaide University Engineering Society</h3>
-                </td>
-                <td class = "td3">
-                  <h3 class = "h3">GAMES Club</h3>
-                </td>
-                <td class = "td3">
-                  <img src="https://youx.org.au/asset/Organisation/6792/3491325_2_cpc%20png.png?thumbnail_width=375&thumbnail_height=375&resize_type=CropToFit" class = "club-logo" alt = "CPC">
-                  <h3 class = "h3">Competitive Programming Club</h3>
-                </td>
-              </tr>
-            </table>
-          </div>
-      </div>
+      <!-- Container demo -->
 
     </main>
 
@@ -128,10 +88,10 @@
              Email: contact@universe.au
             </li>
             <li>
-            <a class="a-text" href="#terms-of-services">Terms Of Service</a>
+            <a href="#terms-of-services">Terms Of Service</a>
             </li>
             <li>
-            <a class="a-text" href="#support">Support</a>
+            <a href="#support">Support</a>
             </li>
           </ul>
         </div>
@@ -171,6 +131,5 @@
     </footer>
 
 <script src="/routes/index.js"></script>
-
 </body>
 </html>
