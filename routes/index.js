@@ -11,9 +11,6 @@ const users_password = [];
 // logoutBtn.addEventListener("click", () => {
 //   window.location.replace("/login");
 // });
-
-
-
 app.get('/', function(req, res) {
   res.render('index', { title: 'Home' });
 });
