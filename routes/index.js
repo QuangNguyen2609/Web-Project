@@ -12,16 +12,15 @@ var app = express();
 
 // connection.connect();
 
-// connection.query('SELECT * FROM users', (error, results, fields) => {
-//   if (error)
-//     throw error;
-//   console.log(results);
-// });
 
 
 const users_email = [];
 const users_password = [];
+var emailArray = [];
+var passwordArray = [];
 var cur_email = null;
+var sql, email, password;
+
 
 /* GET home page. */
 
@@ -69,21 +68,47 @@ app.get('/event_user', function(req, res) {
 });
 
 app.post('/login', function(req, res){
-  var email = req.body.email;
-  var password = req.body.password;
+  email = req.body.email;
+  password = req.body.password;
   cur_email = email;
-  if (users_email.includes(email) && users_password.includes(password))
+  sql = `SELECT email, password FROM Users;`;
+  connection.query(sql, (error, results, fields) => {
+  if (error) throw error;
+    emailArray = results.map(row => row.email);
+    passwordArray = results.map(row => row.password);
+    console.log(emailArray);
+    console.log(passwordArray);
+  });
+
+  if (emailArray.includes(email) && passwordArray.includes(password))
     res.redirect('/user');
   else
     res.redirect('/login');
+
 });
 
 
 app.post('/signup', function(req, res){
-  users_email.push(req.body.email);
-  users_password.push(req.body.password);
-  // req.body['user-type'] user or manager
-  res.redirect('/login');
+  var email = req.body.email;
+  var password = req.body.password;
+
+  // Check if user already exists in database
+  var sql = `SELECT * FROM Users WHERE email = '${email}'`;
+  connection.query(sql, (error, results, fields) => {
+    if (error) throw error;
+    if (results.length > 0) {
+      console.log(`User with email ${email} already exists`);
+      res.redirect('/login');
+    } else {
+      // Insert new user into database
+      sql = `INSERT INTO Users(email, password) VALUES ('${email}', '${password}')`;
+      connection.query(sql, (error, results, fields) => {
+        if (error) throw error;
+        console.log(`New user ${email} created`);
+        res.redirect('/login');
+      });
+    }
+  });
 });
 
 

@@ -444,7 +444,7 @@ img {
   text-align: center;
 }
 
-
+/* LOGIN + SIGNUP */
 
 #login-form-wrap {
   background-color: #fff;
@@ -523,6 +523,8 @@ img {
   padding: 10px 0;
   border-radius: 0 0 4px 4px;
 }
+
+
 
 /******************EVENTS**************************/
 #events{
