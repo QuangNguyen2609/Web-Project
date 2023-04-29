@@ -5,8 +5,8 @@ var app = express();
 // database connection example
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'D1ablo',
-  password: 'minhb10122003',
+  user: '',
+  password: '',
   database: 'wdc'
 });
 
@@ -59,6 +59,10 @@ app.get('/group_user', function(req, res) {
 
 app.get('/event', function(req, res) {
   res.sendFile('/workspaces/Web-Project/public/event.html');
+});
+
+app.get('/profile', function(req, res) {
+  res.sendFile('/workspaces/Web-Project/public/profile.html');
 });
 
 app.get('/event_user', function(req, res) {
