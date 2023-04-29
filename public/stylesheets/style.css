@@ -1119,3 +1119,133 @@ h1{
 
 
 /*********************** EVENT PROFILE *************************/
+
+/*********************** CLUB PROFILE *************************/
+#club-profile{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 13.5vh;
+}
+.club-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.club-card-image img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+.club-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.club-name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.club-followers {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.club-followers P{
+  display: inline-block;
+  margin: 10px;
+  padding: 0;
+}
+
+.club-description {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.club-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.events-club {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.event-introduction-club{
+  /* display: flex;
+  justify-content: space-between; */
+  text-align: center;
+
+}
+.event-card-club {
+  margin: 20px;
+  width: 260px;
+  /* max-height: 400px; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.event-card-club img {
+  display: block;
+  width: 260px;
+  height:177.13px;
+  object-fit: cover;
+}
+
+.event-card-club:hover {
+  transform: translateY(-5px);
+}
+
+.event-info-club{
+  padding: 20px;
+  text-align: center;
+}
+
+.event-title-club {
+  margin-top: 0;
+}
+
+.event-date-club,
+.event-location-club {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.event-button-club{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #f44336;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.event-button-club:hover {
+  background-color: #e53935;
+}
+
+@media screen and (max-width: 1200px) {
+  .event-card-club {
+    max-width: 100%;
+  }
+}
