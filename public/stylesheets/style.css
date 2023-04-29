@@ -7,7 +7,9 @@ html {
 a {
   text-decoration: none;
 }
-
+p{
+  font-size: 18px;
+}
 .a-text {
   color: #cfd2d6;
 }
@@ -656,32 +658,14 @@ img {
 #main1 {
   margin-top: 100px;
 }
-
-
-.events-groups {
-  display: block;
+.main_group{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   margin-top: 50px;
-  margin-bottom: 50px;
 }
 
-.info-bar
-{
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 
-.explore
-{
-  display: block;
-  position: absolute;
-  float: right;
-}
-
-.club-logo {
-  width: 100px;
-  height: 100px;
-}
 
 /***************CONTAINER ************ */
  /**********GROUPS************ */
@@ -787,7 +771,11 @@ img {
   background-color: #444;
 }
 /*******************GROUPS CARD DEMO****************/
-
+/*********************GROUPS CATEGORIES*****************/
+.group-categories{
+margin-top: 0px;
+}
+/*********************GROUPS CATEGORIES*****************/
 
 /****************CONTACT*********/
 
@@ -1265,7 +1253,7 @@ img {
 /*********************** FOOTER *************************/
 
 /***********************MAIN FOOTER *************************/
-#main-footer{
+/* #main-footer{
   background-color: #222;
   color: #a7a7a7;
   font-size: 16px;
@@ -1273,7 +1261,7 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-}
+} */
 
 
 /***********************GROUPS FOOTER *************************/
@@ -1386,3 +1374,291 @@ div.social {
 }
 
 /*********************** FOOTER *************************/
+/*********************** EVENT PROFILE *************************/
+
+#event-profile{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 50px;
+}
+.event-img-profile{
+  margin-top:30px
+}
+.event-img-profile img{
+  border-radius: 5px;
+  max-height: 537px;
+}
+h1{
+  color: #1e0a3c;
+  font-weight: 800;
+  margin-bottom: 16px;
+  margin-bottom: calc(2*var(--base-unit));
+  word-break: break-word;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+ #event-profile h2{
+  color: #1e0a3c;
+  font-weight: 800;
+  word-break: break-word;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+ }
+/* EVENT PROFILE TABLE */
+.event-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.event-detail-left {
+  width: 5%;
+  font-weight: bold;
+  color: #333;
+  padding: 1rem;
+  /* background-color: #f2f2f2; */
+  background-color: white;
+  text-align: center;
+}
+.icon-event-detail{
+  width: 40px;
+  height: 40px;
+  background-color: #f8f7fa;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7.5px;
+}
+.event-detail-right {
+  width: 35%;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.event-detail-label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.event-detail-value {
+  color: #666;
+}
+
+
+
+.fa {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  color: black;
+}
+.event-tags-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.event-tag {
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 10px 20px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+}
+
+.event-tag:hover {
+  background-color: #333;
+  color: #fff;
+}
+.organizer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.organizer-card-image img {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+.organizer-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.organizer-name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.organizer-followers {
+  margin-bottom: 10px;
+}
+
+.organizer-description {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.organizer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* EVENT PROFILE TABLE */
+
+
+/*********************** EVENT PROFILE *************************/
+
+/*********************** CLUB PROFILE *************************/
+#club-profile{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 13.5vh;
+}
+.club-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.club-card-image img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+.club-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.club-name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.club-followers {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.club-followers P{
+  display: inline-block;
+  margin: 10px;
+  padding: 0;
+}
+
+.club-description {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.club-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.events-club {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.event-introduction-club{
+  /* display: flex;
+  justify-content: space-between; */
+  text-align: center;
+
+}
+.event-card-club {
+  margin: 20px;
+  width: 260px;
+  /* max-height: 400px; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.event-card-club img {
+  display: block;
+  width: 260px;
+  height:177.13px;
+  object-fit: cover;
+}
+
+.event-card-club:hover {
+  transform: translateY(-5px);
+}
+
+.event-info-club{
+  padding: 20px;
+  text-align: center;
+}
+
+.event-title-club {
+  margin-top: 0;
+}
+
+.event-date-club,
+.event-location-club {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.event-button-club{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #f44336;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.event-button-club:hover {
+  background-color: #e53935;
+}
+
+@media screen and (max-width: 1200px) {
+  .event-card-club {
+    max-width: 100%;
+  }
+}
