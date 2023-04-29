@@ -1,16 +1,16 @@
 var express = require('express');
-// const mysql = require('mysql2');
+const mysql = require('mysql2');
 var app = express();
 
 // database connection example
-// const connection = mysql.createConnection({
-//   host: 'localhost',
-//   user: 'quang',
-//   password: 'quang2003',
-//   database: 'wdc'
-// });
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'D1ablo',
+  password: 'minhb10122003',
+  database: 'wdc'
+});
 
-// connection.connect();
+connection.connect();
 
 
 
